@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+    <link rel="stylesheet" href="css/vieclam.css"/>
+    <title>Việc làm</title>
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lalezar:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Kumbh Sans:wght@400&display=swap"
+    />
+    </head>
+    <body>
+      <!--Tiêu đề-->
+        <div class="header">
+            <div class="logo">
+                <a href="index.html"><img src="img/favicon.png"></a>
+            </div>
+            <div class="namemobile"><a href="index.html" style="text-decoration: none;"><h4>Viện Công nghệ thông tin và Kinh tế số</h4></a></div>
+    <!--Tiêu đề mb mới-->
+            <div id="mb">
+                <ul id="menumb">
+                    <li class="tmb"><a href="vieclam.html"><h6>Việc làm</h6></a></li>
+                    <li class="tmb"><a href="#"><h6>Hội thảo</h6></a></li>
+                    <li class="tmb"><a href="ctdt.html"><h6>Chương trình đào tạo</h6></a></li>
+                    <li class="tmb"><a href="#"><div class="bar"><i class="fa-solid fa-bars"></i></div></a>
+                        <ul class="submenumb">
+                            <li class="chah">
+                                <div id="tk">
+                                    <input type="text" placeholder="Tìm kiếm..." name="search">
+                                    <button type="submit"><i class="fas fa-search" style="color:black;"></i></button>   
+                                </div>
+                            </li>
+                            <li class="cha"><a href="#">Giới thiệu <i class="fa-solid fa-chevron-down" style="color:#828181; float:right;"></i></a>
+                                <ul class="subsubmb">
+                                    <li><a href="gtc.html"><i class="fa-solid fa-angles-right" style="font-size: 11px; padding-right: 5px;"></i> Giới thiệu chung</a></li>
+                                    <li><a href="#"><i class="fa-solid fa-angles-right" style="font-size: 11px; padding-right: 5px;"></i> Cơ cấu tổ chức</a></li>
+                                    <li><a href="#"><i class="fa-solid fa-angles-right" style="font-size: 11px; padding-right: 5px;"></i> Chức năng nhiệm vụ</a></li>
+                                    <li><a href="#"><i class="fa-solid fa-angles-right" style="font-size: 11px; padding-right: 5px;"></i> Địa chỉ liên hệ</a></li>
+                                </ul>
+                            </li>
+                            <li class="cha thtmb"><a href="#">Thông tin <i class="fa-solid fa-chevron-down" style="color:#828181; float:right;"></i></a>
+                                <ul class="subsubmb sthtmb">
+                                    <li><a href="#"><i class="fa-solid fa-angles-right" style="font-size: 11px; padding-right: 5px;"></i> Tin tức</a></li>
+                                    <li><a href="#"><i class="fa-solid fa-angles-right" style="font-size: 11px; padding-right: 5px;"></i> Lịch tuần</a></li>
+                                    <li><a href="#"><i class="fa-solid fa-angles-right" style="font-size: 11px; padding-right: 5px;"></i> Tuyển sinh 2024</a></li>
+                                    <li><a href="#"><i class="fa-solid fa-angles-right" style="font-size: 11px; padding-right: 5px;"></i> Hướng dẫn học tập</a></li>
+                                    <li><a href="#"><i class="fa-solid fa-angles-right" style="font-size: 11px; padding-right: 5px;"></i> Công đoàn</a></li>
+                                    <li><a href="#"><i class="fa-solid fa-angles-right" style="font-size: 11px; padding-right: 5px;"></i> Khung chương trình</a></li>
+                                </ul>
+                            </li>
+                            <li class="cha dtmb"><a href="#">Đào tạo <i class="fa-solid fa-chevron-down" style="color:#828181; float:right;"></i></a>
+                                <ul class="subsubmb sdtmb">
+                                    <li><a href="#"><i class="fa-solid fa-angles-right" style="font-size: 11px; padding-right: 5px;"></i> Chương trình đào tạo cử nhân</a></li>
+                                    <li><a href="#"><i class="fa-solid fa-angles-right" style="font-size: 11px; padding-right: 5px;"></i> Chương trình đào tạo cao học</a></li>
+                                    <li><a href="#"><i class="fa-solid fa-angles-right" style="font-size: 11px; padding-right: 5px;"></i> Chương trình đào tạo ngắn hạn</a></li>
+                                </ul>
+                            </li>
+                            <li class="cha ncmb"><a href="#">Nghiên cứu <i class="fa-solid fa-chevron-down" style="color:#828181; float:right;"></i></a>
+                                <ul class="subsubmb sncmb">
+                                    <li><a href="#"><i class="fa-solid fa-angles-right" style="font-size: 11px; padding-right: 5px;"></i> NCKH Giảng viên</a></li>
+                                    <li><a href="#"><i class="fa-solid fa-angles-right" style="font-size: 11px; padding-right: 5px;"></i> NCKH Sinh viên</a></li>
+                                    <li><a href="#"><i class="fa-solid fa-angles-right" style="font-size: 11px; padding-right: 5px;"></i> Thông báo hội thảo</a></li>
+                                </ul>
+                            </li>
+                            <li class="cha tsmb"><a href="#">Tuyển sinh <i class="fa-solid fa-chevron-down" style="color:#828181; float:right;"></i></a>
+                                <ul class="subsubmb stsmb">
+                                    <li><a href="#"><i class="fa-solid fa-angles-right" style="font-size: 11px; padding-right: 5px;"></i> Tin tuyển sinh Viện CNTT&KTS</a></li>
+                                    <li><a href="#"><i class="fa-solid fa-angles-right" style="font-size: 11px; padding-right: 5px;"></i> Tuyển sinh ĐH Kinh tế Quốc dân</a></li>
+                                    <li><a href="#"><i class="fa-solid fa-angles-right" style="font-size: 11px; padding-right: 5px;"></i> Tuyển sinh các lớp Tin học ngắn hạn</a></li>
+                                </ul>
+                            </li>
+                            <li class="cha vbttmb"><a href="#">Văn bản-thủ tục <i class="fa-solid fa-chevron-down" style="color:#828181; float:right;"></i></a>
+                                <ul class="subsubmb svbttmb">
+                                    <li><a href="#"><i class="fa-solid fa-angles-right" style="font-size: 11px; padding-right: 5px;"></i> Các mẫu đơn</a></li>
+                                    <li><a href="#"><i class="fa-solid fa-angles-right" style="font-size: 11px; padding-right: 5px;"></i> Bộ phận tiếp nhận hồ sơ một cửa</a></li>
+                                </ul>
+                            </li>
+                            <li class="cha mlmb"><a href="#">Mạng lưới <i class="fa-solid fa-chevron-down" style="color:#828181; float:right;"></i></a>
+                                <ul class="subsubmb smlmb">
+                                    <li><a href="#"><i class="fa-solid fa-angles-right" style="font-size: 11px; padding-right: 5px;"></i> Sinh viên</a></li>    
+                                    <li><a href="#"><i class="fa-solid fa-angles-right" style="font-size: 11px; padding-right: 5px;"></i> Đối tác</a></li>
+                                    <li><a href="#"><i class="fa-solid fa-angles-right" style="font-size: 11px; padding-right: 5px;"></i> Cựu sinh viên</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <script>
+                    const bars = document.querySelector('.bar');
+                    const sbars = document.querySelector('.submenumb');
+                    const chas = document.querySelector('.cha');
+                    const subsubmbs = document.querySelector('.subsubmb');
+                    const thtmbs = document.querySelector('.thtmb');
+                    const sthtmbs = document.querySelector('.sthtmb');
+                    const dtmbs = document.querySelector('.dtmb');
+                    const sdtmbs = document.querySelector('.sdtmb');
+                    const ncmbs = document.querySelector('.ncmb');
+                    const sncmbs = document.querySelector('.sncmb');
+                    const tsmbs = document.querySelector('.tsmb');
+                    const stsmbs = document.querySelector('.stsmb');
+                    const vbttmbs = document.querySelector('.vbttmb');
+                    const svbttmbs = document.querySelector('.svbttmb');
+                    const mlmbs = document.querySelector('.mlmb');
+                    const smlmbs = document.querySelector('.smlmb');
+
+                    bars.addEventListener('click', () => {
+                        sbars.style.display = sbars.style.display === 'none' ? 'flex' : 'none';
+                    })
+
+                    chas.addEventListener('click', () => {
+                    subsubmbs.style.display = subsubmbs.style.display === 'none' ? 'flex' : 'none';
+                    sthtmbs.style.display = 'none';sdtmbs.style.display = 'none';sncmbs.style.display = 'none';
+                    stsmbs.style.display = 'none';svbttmbs.style.display = 'none';smlmbs.style.display = 'none';
+                    });
+                    
+                    thtmbs.addEventListener('click', () => {
+                    sthtmbs.style.display = sthtmbs.style.display === 'none' ? 'flex' : 'none';
+                    subsubmbs.style.display = 'none';sdtmbs.style.display = 'none';sncmbs.style.display = 'none';
+                    stsmbs.style.display = 'none';svbttmbs.style.display = 'none';smlmbs.style.display = 'none';
+                    });
+                    
+                    dtmbs.addEventListener('click', () => {
+                    sdtmbs.style.display = sdtmbs.style.display === 'none' ? 'flex' : 'none';
+                    subsubmbs.style.display = 'none';sthtmbs.style.display = 'none';sncmbs.style.display = 'none';
+                    stsmbs.style.display = 'none';svbttmbs.style.display = 'none';smlmbs.style.display = 'none';
+                    });
+                    
+                    ncmbs.addEventListener('click', () => {
+                    sncmbs.style.display = sncmbs.style.display === 'none' ? 'flex' : 'none';
+                    subsubmbs.style.display = 'none';sthtmbs.style.display = 'none';sdtmbs.style.display = 'none';
+                    stsmbs.style.display = 'none';svbttmbs.style.display = 'none';smlmbs.style.display = 'none';
+                    });
+                    
+                    tsmbs.addEventListener('click', () => {
+                    stsmbs.style.display = stsmbs.style.display === 'none' ? 'flex' : 'none';
+                    subsubmbs.style.display = 'none';sthtmbs.style.display = 'none';sdtmbs.style.display = 'none';
+                    sncmbs.style.display = 'none';svbttmbs.style.display = 'none';smlmbs.style.display = 'none';
+                    });
+                    
+                    vbttmbs.addEventListener('click', () => {
+                    svbttmbs.style.display = svbttmbs.style.display === 'none' ? 'flex' : 'none';
+                    subsubmbs.style.display = 'none';sthtmbs.style.display = 'none';sdtmbs.style.display = 'none';
+                    sncmbs.style.display = 'none';stsmbs.style.display = 'none';smlmbs.style.display = 'none';
+                    });
+                    
+                    mlmbs.addEventListener('click', () => {
+                    smlmbs.style.display = smlmbs.style.display === 'none' ? 'flex' : 'none';
+                    subsubmbs.style.display = 'none';sthtmbs.style.display = 'none';sdtmbs.style.display = 'none';
+                    sncmbs.style.display = 'none';stsmbs.style.display = 'none';svbttmbs.style.display = 'none';
+                    });
+                </script>
+            </div>
+    <!--Hết tiêu đề mb mới-->
+            <div class="name"><b>VIỆN CÔNG NGHỆ THÔNG TIN VÀ KINH TẾ SỐ</b></div>
+            <div class="container">
+                <div class="item"><a href="vieclam.html"><b>VIỆC LÀM</b></a></div>
+                <div class="item"><a href="#"><b>HỘI THẢO</b></a></div>
+                <div class="item" id="last"><a href="ctdt.html"><b>CHƯƠNG TRÌNH ĐÀO TẠO</b></a></div>
+                <div class="search-container">
+                    <input type="text" placeholder="Tìm kiếm..." name="search">
+                    <button type="submit"><i class="fas fa-search"></i></button>
+                    <script src="https://kit.fontawesome.com/ae2b5a8ae3.js" crossorigin="anonymous"></script>
+                </div>
+            </div>
+        </div>
+    <div class="menu">
+        <ul id="menu">
+            <li class="t"><a href="index.html" class="t1">TRANG CHỦ</a></li>
+            <li class="t"><a href="#" class="t1">GIỚI THIỆU</a>
+                <ul class="submenu gioithieu">
+                    <li><a href="gtc.html"><i class="fa-solid fa-angles-right" style="font-size: 11px; padding-right: 5px;"></i> Giới thiệu chung</a></li>
+                    <li><a href="#"><i class="fa-solid fa-angles-right" style="font-size: 11px; padding-right: 5px;"></i> Cơ cấu tổ chức</a></li>
+                    <li><a href="#"><i class="fa-solid fa-angles-right" style="font-size: 11px; padding-right: 5px;"></i> Chức năng nhiệm vụ</a></li>
+                    <li><a href="#"><i class="fa-solid fa-angles-right" style="font-size: 11px; padding-right: 5px;"></i> Địa chỉ liên hệ</a></li>
+                </ul>
+            </li>
+            <li class="t"><a href="#" class="t1">THÔNG TIN</a>
+                <ul class="submenu thongtin">
+                    <li><a href="#"><i class="fa-solid fa-angles-right" style="font-size: 11px; padding-right: 5px;"></i> Tin tức</a></li>
+                    <li><a href="#"><i class="fa-solid fa-angles-right" style="font-size: 11px; padding-right: 5px;"></i> Lịch tuần</a></li>
+                    <li><a href="#"><i class="fa-solid fa-angles-right" style="font-size: 11px; padding-right: 5px;"></i> Tuyển sinh 2024</a></li>
+                    <li><a href="#"><i class="fa-solid fa-angles-right" style="font-size: 11px; padding-right: 5px;"></i> Hướng dẫn học tập</a></li>
+                    <li><a href="#"><i class="fa-solid fa-angles-right" style="font-size: 11px; padding-right: 5px;"></i> Công đoàn</a></li>
+                    <li><a href="#"><i class="fa-solid fa-angles-right" style="font-size: 11px; padding-right: 5px;"></i> Khung chương trình</a>
+                        <ul class="subsmenu">
+                            <li><a href="#"><i class="fa-solid fa-angles-right" style="font-size: 11px; padding-right: 5px;"></i> Ngành Công nghệ thông tin</a></li>
+                            <li><a href="#"><i class="fa-solid fa-angles-right" style="font-size: 11px; padding-right: 5px;"></i> Ngành Khoa học máy tính</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li class="t"><a href="#" class="t1">ĐÀO TẠO</a>
+                <ul class="submenu daotao">
+                    <li><a href="#"><i class="fa-solid fa-angles-right" style="font-size: 11px; padding-right: 5px;"></i> Chương trình đào tạo cử nhân</a>
+                        <ul class="subsmenu cunhan">
+                            <li><a href="#"><i class="fa-solid fa-angles-right" style="font-size: 11px; padding-right: 5px;"></i> Ngành Công nghệ thông tin</a></li>
+                            <li><a href="#"><i class="fa-solid fa-angles-right" style="font-size: 11px; padding-right: 5px;"></i> Ngành Khoa học máy tính</a></li>
+                            <li><a href="#"><i class="fa-solid fa-angles-right" style="font-size: 11px; padding-right: 5px;"></i> Ngành Hệ thống thông tin quản lý</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#"><i class="fa-solid fa-angles-right" style="font-size: 11px; padding-right: 5px;"></i> Chương trình đào tạo cao học</a>
+                        <ul class="subsmenu caohoc">
+                            <li><a href="#"><i class="fa-solid fa-angles-right" style="font-size: 11px; padding-right: 5px;"></i> Thạc sĩ ngành Hệ thống thông tin quản lý</a></li>
+                            <li><a href="#"><i class="fa-solid fa-angles-right" style="font-size: 11px; padding-right: 5px;"></i> Tiến sĩ ngành Hệ thống thông tin quản lý</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#"><i class="fa-solid fa-angles-right" style="font-size: 11px; padding-right: 5px;"></i> Chương trình đào tạo ngắn hạn</a></li>
+                </ul>
+            </li>
+            <li class="t"><a href="#" class="t1">NGHIÊN CỨU</a>
+                <ul class="submenu nghiencuu">
+                    <li><a href="#"><i class="fa-solid fa-angles-right" style="font-size: 11px; padding-right: 5px;"></i> NCKH Giảng viên</a></li>
+                    <li><a href="#"><i class="fa-solid fa-angles-right" style="font-size: 11px; padding-right: 5px;"></i> NCKH Sinh viên</a></li>
+                    <li><a href="#"><i class="fa-solid fa-angles-right" style="font-size: 11px; padding-right: 5px;"></i> Thông báo hội thảo</a></li>
+                </ul>
+            </li>
+            <li class="t"><a href="#" class="t1">TUYỂN SINH</a>
+                <ul class="submenu tuyensinh">
+                    <li><a href="#"><i class="fa-solid fa-angles-right" style="font-size: 11px; padding-right: 5px;"></i> Tin tuyển sinh Viện CNTT&KTS</a></li>
+                    <li><a href="#"><i class="fa-solid fa-angles-right" style="font-size: 11px; padding-right: 5px;"></i> Tuyển sinh ĐH Kinh tế Quốc dân</a></li>
+                    <li><a href="#"><i class="fa-solid fa-angles-right" style="font-size: 11px; padding-right: 5px;"></i> Tuyển sinh các lớp Tin học ngắn hạn</a></li>
+                </ul>
+            </li>
+            <li class="t"><a href="#" class="t1">VĂN BẢN-THỦ TỤC</a>
+                <ul class="submenu vanban">
+                    <li><a href="#"><i class="fa-solid fa-angles-right" style="font-size: 11px; padding-right: 5px;"></i> Các mẫu đơn</a></li>
+                    <li><a href="#"><i class="fa-solid fa-angles-right" style="font-size: 11px; padding-right: 5px;"></i> Bộ phận tiếp nhận hồ sơ một cửa</a></li>
+                </ul>
+            </li>
+            <li class="t"><a href="#" class="t1">MẠNG LƯỚI</a>
+                <ul class="submenu mangluoi">
+                    <li><a href="#"><i class="fa-solid fa-angles-right" style="font-size: 11px; padding-right: 5px;"></i> Sinh viên</a>
+                        <ul class="subsmenu">
+                            <li><a href="#"><i class="fa-solid fa-angles-right" style="font-size: 11px; padding-right: 5px;"></i> Liên chi đoàn</a></li>
+                            <li><a href="#"><i class="fa-solid fa-angles-right" style="font-size: 11px; padding-right: 5px;"></i> Việc làm sinh viên</a></li>
+                        </ul>
+                    </li>    
+                    <li><a href="#"><i class="fa-solid fa-angles-right" style="font-size: 11px; padding-right: 5px;"></i> Đối tác</a></li>
+                    <li><a href="#"><i class="fa-solid fa-angles-right" style="font-size: 11px; padding-right: 5px;"></i> Cựu sinh viên</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <!--Tin tức PC-->
+    <div class="tintuc">
+        <div id="tieude">
+            <div class="tieude" onclick="ham(0)"><a href="#tintuc"><h2>TIN TỨC VIỆN CNTT & KTS</h2></a></div>
+            <div class="tieude" onclick="ham(1)"><a href="#tintuc"><h2>LỊCH CÔNG TÁC</h2></a></div>
+            <div class="tieude" onclick="ham(2)"><a href="#tintuc"><h2>VIỆC LÀM SV</h2></a></div>
+            <div class="tieude" onclick="ham(3)"><a href="#tintuc"><h2>SV CẦN BIẾT</h2></a></div>
+        </div>
+        <div class="tt">
+<!--Tin tức viện-->
+            <div class="new head">
+                <a href="#tintuc">
+                    <img src="img/ttm1.jpg">
+                    <p>Hội thảo sinh viên NEU 2024 - Cùng SITDE hướng đến tập thể xuất sắc nhất</p>
+                </a>
+            </div>
+            <div class="new">
+                <a href="#tintuc">
+                    <img src="img/ttm2.jpg">
+                    <p>Liên chi đoàn SITDE - Tại hội thi cán bộ đoàn giỏi "Sao tháng ba 2024"</p>
+                </a>
+            </div>
+            <div class="new">
+                <a href="#tintuc">
+                    <img src="img/ttm3.jpg">
+                    <p>SOTA đẹp - Chuyến đi của thanh xuân</p>
+                </a>
+            </div>
+            <div class="new end">
+                <a href="#tintuc">
+                    <img src="img/ttm4.jpg">
+                    <P>Những trải nghiệm đầu tiên tại SOTA của những chú lính SITDE</P>
+                </a>
+            </div>
+            <div class="docthem">
+                <a href="#tintuc"><h3>Đọc thêm >></h3></a>
+            </div>
+        </div>
+<!--Công tác-->
+        <div class="tt">
+            <div class="ct head">
+                <a href="#tintuc">
+                    <img src="img/ct.png">
+                    <p>Lịch công tác tuần 05 năm 2024 (Từ 29/01/2024 đến 04/02/2024 Bản cập nhật bổ sung lần 1)</p>
+                </a>
+            </div>
+            <div class="ct">
+                <a href="#tintuc">
+                    <img src="img/ct.png">
+                    <P>Lịch công tác tuần 04 năm 2024 (Từ 22/01/2024 đến 28/01/2024 Bản cập nhật bổ sung lần 1)</P>
+                </a>
+            </div>
+            <div class="ct">
+                <a href="#tintuc">
+                    <img src="img/ct.png">
+                    <P>Lịch công tác tuần 03 năm 2024 (Từ 15/01/2024 đến 21/01/2024 Bản cập nhật bổ sung lần 1)</P>
+                </a>
+            </div>
+            <div class="ct end">
+                <a href="#tintuc">
+                    <img src="img/ct.png">
+                    <P>Lịch công tác tuần 02 năm 2024 (Từ 08/01/2024 đến 14/01/2024 Bản cập nhật bổ sung lần 1)</P>
+                </a>
+            </div>
+            <div class="docthem">
+                <a href="#tintuc"><h3>Đọc thêm >></h3></a>
+            </div>
+        </div>
+<!--Việc làm-->
+        <div class="tt">
+            <div class="vl head">
+                <a href="#tintuc">
+                    <img src="img/nvkd.jpg">
+                    <p>Tuyển 10 nhân viên Kinh doanh</p>
+                </a>
+            </div>
+            <div class="vl">
+                <a href="#tintuc">
+                    <img src="img/ptpm.jpg">
+                    <P>Tuyển 15 Nhân viên Triển khai phần mềm</P>
+                </a>
+            </div>
+            <div class="vl">
+                <a href="#tintuc">
+                    <img src="img/erp.jpg">
+                    <P>FAST Hà Nội tuyển dụng nhân viên Tư vấn triển khai giải pháp ERP</P>    
+                </a>
+            </div>
+            <div class="vl end">
+                <a href="#tintuc">
+                    <img src="img/vl.jpg">
+                    <P>FAST tuyển dụng nhân viên phát triển và hỗ trợ cộng đồng người sử dụng phần mềm</P>    
+                </a>
+            </div>
+            <div class="docthem">
+                <a href="#tintuc"><h3>Đọc thêm >></h3></a>
+            </div>
+        </div>
+<!--Sinh viên-->
+        <div class="tt">
+            <div class="sv head">
+                <a href="#tintuc">
+                    <img src="img/sql.webp">
+                    <p>Lộ trình học MySQL từ A đến Z</p>
+                </a>
+            </div>
+            <div class="sv">
+                <a href="#tintuc">
+                    <img src="img/sv.jpg">
+                <P>THÔNG BÁO SỐ 4 Về việc tăng cường công tác phòng, chống dịch COVID-19 trong tình hình mới</P>
+                </a>
+            </div>
+            <div class="sv">
+                <a href="https://sitde.neu.edu.vn/vi/sv-can-biet/kien-truc-huong-dich-vu-soap">
+                    <img src="img/sv1.jpg">
+                    <P>Kiến trúc hướng dịch vụ SOAP</P>
+                </a>
+            </div>
+            <div class="sv end">
+                <a href="https://sitde.neu.edu.vn/vi/sv-can-biet/huong-dan-chuyen-sinh-hoat-dang-cho-khoa-62-5405">
+                    <img src="img/sv2.png">
+                    <P>Hướng dẫn chuyển sinh hoạt Đảng cho khóa 62</P>
+                </a>
+            </div>
+            <div class="docthem">
+                <a href="https://sitde.neu.edu.vn/vi/sv-can-biet"><h3>Đọc thêm >></h3></a>
+            </div>
+        </div>
+    </div>
+    <!--Tin tức mobile-->
+    <!--Tin tức-->
+    <div class="tintucmb action">
+        <div class="namemb">
+            <div class="tieude ttmb"><h3>TIN TỨC VIỆN CNTT&KTS <i class="fa-solid fa-caret-down"></i></h3>
+            <div class="subtieude sttmb">
+                <div class="itmb" onclick="chay(1)"><h3>LỊCH CÔNG TÁC</h3></div>
+                <div class="itmb" onclick="chay(2)"><h3>VIỆC LÀM SV</h3></div>
+                <div class="itmb" onclick="chay(3)"><h3>SV CẦN BIẾT</h3></div>
+            </div>
+            </div>
+        </div>
+        <div class="ttmb">
+            <a href="#tintucmb">
+                <img src="img/ttm1.jpg">
+                <p>Hội thao sinh viên NEU 2024 - Cùng SITDE hướng đến tập thể xuất sắc nhất</p>
+            </a>
+            <br>
+            <a href="#tintucmb"><p>Đọc thêm >></p></a><br>
+        </div>
+    </div>
+<!--Lịch công tác-->
+    <div class="tintucmb">
+        <div class="namemb">
+            <div class="tieude ctmb"><h3>LỊCH CÔNG TÁC <i class="fa-solid fa-caret-down"></i></h3>
+                <div class="subtieude sctmb">
+                    <div class="itmb" onclick="chay(0)"><h3>TIN TỨC VIỆN CNTT&KTS</h3></div>
+                    <div class="itmb" onclick="chay(2)"><h3>VIỆC LÀM SV</h3></div>
+                    <div class="itmb" onclick="chay(3)"><h3>SV CẦN BIẾT</h3></div>
+                </div>
+            </div>
+        </div>
+        <div class="ttmb">
+            <a href="#tintucmb">
+                <img src="img/ct.png">
+                <p>Lịch công tác tuần 05 năm 2024 (Từ ngày 29/01/2024 đến ngày 04/02/2024 Bản cập nhật bổ sung lần 1)</p>
+            </a>
+            <br>
+            <a href="#tintucmb"><p>Đọc thêm >></p></a><br>
+        </div>
+    </div>
+<!--Việc làm sinh viên-->
+    <div class="tintucmb">
+        <div class="namemb">
+            <div class="tieude vlmb"><h3>VIỆC LÀM SV <i class="fa-solid fa-caret-down"></i></h3>
+                <div class="subtieude svlmb">
+                    <div class="itmb" onclick="chay(0)"><h3>TIN TỨC VIỆN CNTT&KTS</h3></div>
+                    <div class="itmb" onclick="chay(1)"><h3>LỊCH CÔNG TÁC</h3></div>
+                    <div class="itmb" onclick="chay(3)"><h3>SV CẦN BIẾT</h3></div>
+                </div>
+            </div>
+        </div>
+        <div class="ttmb">
+            <a href="#tintucmb">
+                <img src="img/nvkd.jpg">
+                <p>Tuyển 10 nhân viên Kinh doanh</p>
+            </a>
+            <br>
+            <a href="#tintucmb"><p>Đọc thêm >></p></a><br>
+        </div>
+    </div>
+<!--Sinh viên cần biết-->
+    <div class="tintucmb">
+        <div class="namemb">
+            <div class="tieude svmb"><h3>SV CẦN BIẾT <i class="fa-solid fa-caret-down"></i></h3>
+                <div class="subtieude ssvmb">
+                    <div class="itmb" onclick="chay(0)"><h3>TIN TỨC VIỆN CNTT&KTS</h3></div>
+                    <div class="itmb" onclick="chay(1)"><h3>LỊCH CÔNG TÁC</h3></div>
+                    <div class="itmb" onclick="chay(2)"><h3>VIỆC LÀM SV</h3></div>
+                </div>
+            </div>
+        </div>
+        <div class="ttmb">
+            <a href="#tintucmb">
+                <img src="img/sql.webp">
+                <p>Lộ trình học MySQL từ A đến Z</p>
+            </a>
+            <br>
+            <a href="#tintucmb"><p>Đọc thêm >></p></a><br>
+        </div>
+    </div>
+    <script>
+        const ttmbs = document.querySelector('.ttmb');
+        const sttmbs = document.querySelector('.sttmb');
+        ttmbs.addEventListener('click', () => {
+        sttmbs.style.display = sttmbs.style.display === 'none' ? 'block' : 'none';
+        });
+
+        const ctmbs = document.querySelector('.ctmb');
+        const sctmbs = document.querySelector('.sctmb');
+        ctmbs.addEventListener('click', () => {
+        sctmbs.style.display = sctmbs.style.display === 'none' ? 'block' : 'none';
+        });
+
+        const vlmbs = document.querySelector('.vlmb');
+        const svlmbs = document.querySelector('.svlmb');
+        vlmbs.addEventListener('click', () => {
+        svlmbs.style.display = svlmbs.style.display === 'none' ? 'block' : 'none';
+        });
+
+        const svmbs = document.querySelector('.svmb');
+        const ssvmbs = document.querySelector('.ssvmb');
+        svmbs.addEventListener('click', () => {
+        ssvmbs.style.display = ssvmbs.style.display === 'none' ? 'block' : 'none';
+        });
+
+        const tintucmbs = document.querySelectorAll('.tintucmb');
+        function chay(n){
+            for (var i = 0; i < tintucmbs.length; i++){
+                tintucmbs[i].className = tintucmbs[i].className.replace(" action", "");
+            }
+            tintucmbs[n].className += " action";
+        }
+    </script>
+    <div class="content" >
+        
+        <div id="jobs">
+            <div><h2>VIỆC LÀM</h2></div>
+            <div class="grid-container1">
+                <div class="grid-item"><a href="https://sitde.neu.edu.vn/vi/viec-lam-sv/tuyen-10-nhan-vien-kinh-doanh"><img src="img/vieclam1.jpg"></a></div>
+                <div class="grid-item">
+                    <a href="https://sitde.neu.edu.vn/vi/viec-lam-sv/tuyen-10-nhan-vien-kinh-doanh"><p class="title">Tuyển 10 nhân viên kinh doanh</p></a>
+                    <p class="date"><i class="far fa-clock"></i>04/03/2024</p>
+                </div>
+                <div class="grid-item"><a href="https://sitde.neu.edu.vn/vi/viec-lam-sv/tuyen-15-nhan-vien-trien-khai-phan-mem-4446"><img src="img/vieclam2.jpg"></a></div>
+                <div class="grid-item">
+                    <a href="https://sitde.neu.edu.vn/vi/viec-lam-sv/tuyen-15-nhan-vien-trien-khai-phan-mem-4446"><p class="title">Tuyển 15 nhân viên triển khai phần mềm</p></a>
+                    <p class="date"><i class="far fa-clock"></i>04/03/2024</p>
+                </div>
+                <div class="grid-item"><a href="https://sitde.neu.edu.vn/vi/viec-lam-sv/fast-ha-noi-tuyen-dung-nhan-vien-tu-van-trien-khai-giai-phap-erp"><img src="img/vieclam3.jpg"></a></div>
+                <div class="grid-item">
+                    <a href="https://sitde.neu.edu.vn/vi/viec-lam-sv/fast-ha-noi-tuyen-dung-nhan-vien-tu-van-trien-khai-giai-phap-erp"><p class="title">FAST Hà Nội tuyển dụng nhân viên Tư vấn triển khai giải pháp ERP</p></a>
+                    <p class="date"><i class="far fa-clock"></i>28/02/2024</p>
+                </div>
+                <div class="grid-item"><a href="https://sitde.neu.edu.vn/vi/viec-lam-sv/fast-tuyen-dung-nhan-vien-phat-trien-va-ho-tro-cong-dong-nguoi-su-dung-phan-mem"><img src="img/vieclam4.png"></a></div>
+                <div class="grid-item">
+                    <a href="https://sitde.neu.edu.vn/vi/viec-lam-sv/fast-tuyen-dung-nhan-vien-phat-trien-va-ho-tro-cong-dong-nguoi-su-dung-phan-mem"><p class="title">FAST tuyển dụng nhân viên phát triển và hỗ trợ cộng đồng người sử dụng phần mềm</p></a>
+                    <p class="date"><i class="far fa-clock"></i>26/02/2024</p>
+                </div>
+                <div class="grid-item"><a href="https://sitde.neu.edu.vn/vi/viec-lam-sv/fast-tuyen-dung-nhan-vien-kinh-doanh-lam-viec-tai-ha-noi"><img src="img/vieclam5.jpg"></a></div>
+                <div class="grid-item">
+                    <a href="https://sitde.neu.edu.vn/vi/viec-lam-sv/fast-tuyen-dung-nhan-vien-kinh-doanh-lam-viec-tai-ha-noi"><p class="title">FAST tuyển dụng nhân viên Kinh doanh làm việc tại Hà Nội</p></a>
+                    <p class="date"><i class="far fa-clock"></i>26/02/2024</p>
+                </div>
+                <div class="grid-item"><a href="https://sitde.neu.edu.vn/vi/viec-lam-sv/tuyen-02-lap-trinh-vien-flutter-khoi-cong-nghe-1623"><img src="img/vieclam6.jpg"></a></div>
+                <div class="grid-item"> 
+                    <a href="https://sitde.neu.edu.vn/vi/viec-lam-sv/tuyen-02-lap-trinh-vien-flutter-khoi-cong-nghe-1623"><p class="title">Tuyển 02 Lập trình viên Flutter Khối Công nghệ</p></a>
+                    <p class="date"><i class="far fa-clock"></i>02/01/2024</p>
+                </div>
+                <div class="grid-item"><a href="https://sitde.neu.edu.vn/vi/viec-lam-sv/tuyen-02-lap-trinh-vien-flutter-khoi-cong-nghe-1623"><img src="img/vieclam7.jpg"></a></div>
+                <div class="grid-item">
+                    <a href="https://sitde.neu.edu.vn/vi/viec-lam-sv/tuyen-02-lap-trinh-vien-flutter-khoi-cong-nghe-1623"><p class="title">Tuyển 05 lập trình viên C# .NET WinForms Khối Công nghệ</p></a>
+                    <p class="date"><i class="far fa-clock"></i>02/01/2024</p>
+                </div>
+                <div class="grid-item"><a href="https://sitde.neu.edu.vn/vi/viec-lam-sv/tuyen-05-nhan-vien-bao-hanh-phan-mem"><img src="img/vieclam8.jpg"></a></div>
+                <div class="grid-item">
+                    <a href="https://sitde.neu.edu.vn/vi/viec-lam-sv/tuyen-05-nhan-vien-bao-hanh-phan-mem"><p class="title">Tuyển 05 Nhân viên Bảo hành phần mềm</p></a>
+                    <p class="date"><i class="far fa-clock"></i>02/01/2024</p>
+                </div>
+                
+            </div>
+            <div class="pagination">
+                <a href="vieclam.html">&laquo;</a>
+                <a class="active" href="vieclam.html">1</a>
+                <a href="vieclam2.html">2</a>
+                <a href="vieclam3.html">3</a>
+                <a href="vieclam2.html">&raquo;</a>
+            </div>
+        </div>
+        <div class="aside">
+            <div id="general">
+                <div class="label"><h3>Thông báo chung</h3></div>
+                <div class="items">
+                    <a href="#">
+                        <img src="img/thuongmai.png">
+                        <p>Những xu hướng sẽ định hình thương mại điện tử năm 2024</p>
+                    </a>
+                </div>
+                <div class="items">
+                    <a href="#">
+                        <img src="img/ai.jpg">
+                        <p>Tăng cường vai trò trí tuệ nhân tạo trong truyền thông trực tiếp</p>
+                    </a>
+                </div>
+                <div class="items">
+                    <a href="#">
+                        <img src="img/giaodich.jpg">
+                        <p>Chính sách mới cho các giao dịch trên không gian mạng</p>
+                    </a>
+                </div>
+                <div class="items">
+                    <a href="#">
+                        <img src="img/congnghe.webp">
+                        <p>Các doanh nghiệp công nghệ lớn tăng đầu tư vào Việt Nam</p>
+                    </a>
+                </div>
+            </div>
+            <hr>
+            <div class="facebook-page-plugin" >
+                <div id="fb-root"></div>
+                <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v19.0" nonce="e76r4Ac0"></script>
+                <div class="fb-page" data-href="https://www.facebook.com/cnttkts"  data-tabs="timeline"  data-width="360px" data-height="660px" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/cnttkts" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/cnttkts">Liên chi đoàn Viện Công nghệ thông tin và Kinh tế số - NEU</a></blockquote></div>
+                <div class="fb-page" 
+                data-tabs="timeline"
+                data-small-header="false"
+                data-adapt-container-width="true"
+                data-hide-cover="false"
+                data-show-facepile="true">
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="lk">
+      <h1>LIÊN KẾT</h1>
+      <div class="lienket">
+          <div class="itemlk"><a href="#"><img src="img/lk1.png"></a></div>
+          <div class="itemlk"><a href="#"><img src="img/lk2.png"></a></div>
+          <div class="itemlk"><a href="#"><img src="img/lk3.png"></a></div>
+          <div class="itemlk"><a href="#"><img src="img/lk4.png"></a></div>
+          <div class="itemlk"><a href="#"><img src="img/lk5.png"></a></div>
+          <div class="itemlk"><a href="#"><img src="img/lk6.png"></a></div>
+          <div class="itemlk"><a href="#"><img src="img/lk7.png"></a></div>
+          <div class="itemlk"><a href="#"><img src="img/lk8.png"></a></div>
+          <div class="itemlk"><a href="#"><img src="img/lk9.png"></a></div>
+          <div class="itemlk"><a href="#"><img src="img/lk10.png"></a></div>
+          <div class="itemlk"><a href="#"><img src="img/lk11.png"></a></div>
+          <div class="itemlk"><a href="#"><img src="img/lk12.png"></a></div>
+          <div class="itemlk"><a href="#"><img src="img/lk13.png"></a></div>
+          <div class="itemlk"><a href="#"><img src="img/lk14.png"></a></div>
+          <div class="itemlk"><a href="#"><img src="img/lk15.png"></a></div>
+          <div class="itemlk"><a href="#"><img src="img/lk16.png"></a></div>
+          <div class="itemlk"><a href="#"><img src="img/lk17.png"></a></div>
+          <div class="itemlk"><a href="#"><img src="img/lk18.png"></a></div>
+          <div class="itemlk"><a href="#"><img src="img/lk19.png"></a></div>
+      </div>
+    </div>
+    <script>
+        var index = 0;
+        var lienket = document.querySelectorAll(".itemlk");
+        function run() {
+            var i;
+            
+            for (i = 0; i < lienket.length; i++) {
+                lienket[i].style.display = "none";
+            }
+            for (i = 1; i <= 5; i++) {
+                if (index > 18){
+                    index = 0;
+                }
+                lienket[index].style.display = "flex";
+                lienket[index].style.order=i;
+                ++index;
+            }
+            if (index>=4){
+                index-=4;
+            }
+            else {
+                index=index+19-4;
+            }
+            
+        }
+        
+        const looplk= setInterval(run,3000);
+        run();
+    </script>
+    
+    <!--Liên kết mobile-->
+    <div id="lkmb">
+        <h3>LIÊN KẾT</h3>
+        <div id="lienketmb">
+            <div class="itemlkmb"><a href="#"><img src="img/lk1.png"></a></div>
+            <div class="itemlkmb"><a href="#"><img src="img/lk2.png"></a></div>
+            <div class="itemlkmb"><a href="#"><img src="img/lk3.png"></a></div>
+            <div class="itemlkmb"><a href="#"><img src="img/lk4.png"></a></div>
+            <div class="itemlkmb"><a href="#"><img src="img/lk5.png"></a></div>
+            <div class="itemlkmb"><a href="#"><img src="img/lk6.png"></a></div>
+            <div class="itemlkmb"><a href="#"><img src="img/lk7.png"></a></div>
+            <div class="itemlkmb"><a href="#"><img src="img/lk8.png"></a></div>
+            <div class="itemlkmb"><a href="#"><img src="img/lk9.png"></a></div>
+            <div class="itemlkmb"><a href="#"><img src="img/lk10.png"></a></div>
+            <div class="itemlkmb"><a href="#"><img src="img/lk11.png"></a></div>
+            <div class="itemlkmb"><a href="#"><img src="img/lk12.png"></a></div>
+            <div class="itemlkmb"><a href="#"><img src="img/lk13.png"></a></div>
+            <div class="itemlkmb"><a href="#"><img src="img/lk14.png"></a></div>
+            <div class="itemlkmb"><a href="#"><img src="img/lk15.png"></a></div>
+            <div class="itemlkmb"><a href="#"><img src="img/lk16.png"></a></div>
+            <div class="itemlkmb"><a href="#"><img src="img/lk17.png"></a></div>
+            <div class="itemlkmb"><a href="#"><img src="img/lk18.png"></a></div>
+            <div class="itemlkmb"><a href="#"><img src="img/lk19.png"></a></div>
+        </div>
+    </div>
+    <script>
+        var indexs = 0;
+        var lienketmb = document.querySelectorAll(".itemlkmb");
+        function runs() {
+            var i;
+            for (i = 0; i < lienketmb.length; i++) {
+                lienketmb[i].style.display = "none";
+            }
+            for (i = 1; i <= 3; i++) {
+                if (indexs > 18){
+                    indexs = 0;
+                }
+                lienketmb[indexs].style.display = "flex";
+                lienketmb[indexs].style.order=i;
+                ++indexs;
+            }
+            if (indexs>=2){
+                indexs-=2;
+            }
+            else {
+                indexs=indexs+19-2;
+            }
+        }
+        const looplkmb= setInterval(runs,5000);
+        runs();
+    </script>
+      
+    <footer class="footer">
+      <div id="con">
+            <i class="fas fa-facebook" aria-hidden="true"></i>
+            <h2>VIỆN CÔNG NGHỆ THÔNG TIN VÀ KINH TẾ SỐ</h2>
+            <p><i class="fas fa-home"></i> Địa chỉ: <a href="#" target="blank">
+            P.1308 - P.1312, Tòa nhà A1, Trường Đại học KTQD, 
+            207 Giải Phóng, Hai Bà Trưng, Hà Nội</a></p>
+            <p><i class="fa-solid fa-earth-asia"></i> Website: <a href="" target="blank">https://sitde.neu.edu.vn</a></p>
+            <p><i class="fas fa-phone"></i> Số điện thoại: <a href="tel:0965509888">096.550.9888 (Phạm Văn Minh)</a></p>
+            <p>
+                <a href="#"><i class="fa-brands fa-facebook" style="font-size:30px;color:#0866ff;"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube" style="font-size:30px;color:red;"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter" style="font-size:30px;color:white;"></i></a>
+            </p>
+            <script src="https://kit.fontawesome.com/ae2b5a8ae3.js" crossorigin="anonymous"></script>
+      </div>
+      <p id="other">Copyright <i class="fa fa-copyright" style="padding-right: 15px;"></i> 2016 - Trường Đại học Kinh Tế Quốc Dân, All Rights Reserved</p>
+      <br>
+    </footer>
+    <script src="js/viencntt.js"></script>
+  </body>
+</html>

@@ -1,0 +1,460 @@
+body {
+        font-family: Arial;
+        font-size: 13pt;
+        margin:0px;
+        margin: auto;
+    
+/*Tiêu đề*/
+#mb{
+    display:none;
+}
+.header{
+    font-family: 'Poppins', sans-serif;
+    justify-content: center;
+    height:100px;
+    background-color: #26316d;
+    .logo{
+        padding: 30px 20px 20px 138px;
+        float:left;
+    }
+    .container{
+        display:flex;
+        font-size: 13pt;
+        font-weight: 100;
+        justify-content:flex-end;
+        a:link {text-decoration: none;color: white;}
+        a:visited {color: white;}
+    }
+    .namemobile{
+        display:none;
+    }
+    .containermobile{
+        display:none;
+    }
+    .name{
+        font-size: 20pt;
+        color:white;
+        float:left;
+        margin:20px 0px;
+        padding:15px 0px 8px 0px;
+        justify-content: flex-start;
+    }
+    .item{
+        margin-top: 30px;
+        margin-right: 8px;
+        padding:8px 13px;
+        border-radius: 5px;
+        a:hover{
+            color:#dcdcdc;
+        }
+    }
+    .search-container{
+        background-color: white;
+        margin:33px 145px 30px 20px;
+        border-radius: 10px;
+        border-style: solid black;
+        border-width: 2px;
+        button{
+            margin: 0px !important;
+            border-radius: 0px 10px 10px 0px;
+            background-color: white;
+            border: none;
+            font-size: 13pt;
+            cursor: pointer;
+        }
+        input{
+            padding: 3px 8px;
+            border-radius: 10px 0px 0px 10px;
+            margin-right:0px;
+            font-size: 12pt;
+            border:none;
+            width:110px;
+        }
+    }
+}
+/*Menu*/
+.menu{
+    background: #dcdcdc;
+    box-sizing: border-box;
+    position:sticky;
+    z-index: 2;
+    top:0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 550;
+    font-size: 12pt;
+}
+#menu{
+    margin:0px;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+#menu li{
+    padding: 10px;
+    position: relative;
+    display: block;
+}
+#menu li a{
+    color: #000000;
+    text-decoration: none;
+    padding: 10px 10px;
+}
+#menu li a:hover{
+    background: #00568f;
+    color: white;
+}
+.submenu{
+    display: none;
+    font-weight: 100;
+}
+.subsmenu{
+    display: none;
+}
+#menu li:hover .submenu{
+    display: block;
+    position: absolute;
+    margin-top: 10px;
+    background: #0065ca;
+    padding: 0px;
+    a{
+        color:white;
+    }
+    li{
+        border-style: dotted;
+        border-width: 0px 0px 1px 0px;
+    }
+    li:hover{
+        background-color: #00568f;
+    }
+    width:300px;
+}
+.t:hover .t1{
+    color:white !important;
+    background-color: #00568f;
+}
+.submenu li:hover .subsmenu{
+    display: block;
+    position: absolute;
+    top:0px;
+    background: #0065ca;
+    padding: 0px;
+    a{
+        color:white;
+    }
+    li{
+        border-style: dotted;
+        border-width: 0px 0px 1px 0px;
+    }
+    li:hover{
+        background-color: #00568f;
+    }
+}
+.submenu .subsmenu{
+    box-shadow: 0px 20px 100px 0px rgba(0, 0, 0, 0.5);
+}
+#menu li:hover .gioithieu{
+    width:213px;
+}
+#menu li:hover .thongtin{
+    width:210px;
+}
+/*con của thông tin*/
+.thongtin li:hover .subsmenu{
+    left:210px;
+    width:260px;
+}
+#menu li:hover .daotao{
+    width:295px;
+}
+/*con của đào tạo*/
+.daotao li:hover .cunhan{
+    left:295px;
+    width:305px;
+}
+.daotao li:hover .caohoc{
+    left:295px;
+    width:360px;
+}
+#menu li:hover .nghiencuu{
+    width:205px;
+}
+#menu li:hover .tuyensinh{
+    width:330px;
+}
+#menu li:hover .vanban{
+    width:305px;
+}
+#menu li:hover .mangluoi{
+    width:165px;
+}
+.mangluoi li:hover .subsmenu{
+    left:165px;
+    width:195px;
+}
+
+.mobile{
+    display:none;
+}
+/*group1*/
+.gioithieus{
+    width:100%;
+    background-color: #20295a;
+}
+#bao{
+    width:82%;
+    margin:auto;
+}
+.group1{
+    text-align: justify;
+    display:block;
+    padding-top: 80px;
+    padding-bottom: 40px;
+    width: 100%;
+    height: 400px;
+}
+.dot {
+    cursor:pointer;
+    height: 13px;
+    width: 13px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.active, .dot:hover {
+background-color: #717171;
+}
+/*anhslide*/
+.anhsitde{
+    float: left; 
+    height: 100%;
+    padding-top: 20px;
+}
+.gioithieu{
+    padding-left: 50px;
+    float: left; 
+    height: 100%; 
+    box-sizing: border-box;
+}
+.gtchung{
+    font-weight: bold;
+    padding-left: 160px;
+    font-size: 40px;
+    color: aliceblue;
+}
+.gtchitiet{
+    font-size: 20px;
+    padding-left: 10px;
+    color: aliceblue;
+    font-weight: lighter;
+}
+
+/*group2*/
+.group2::before{
+    z-index: -1;
+    background-image: url(../img/doanthanhnien.webp);
+    /*background-attachment: fixed;*/
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity:0.9;
+    filter: brightness(50%);
+}
+.group2{
+    z-index: 1;
+    position:relative;
+    float:none;
+    h1{
+        margin:0px;
+        padding-top: 25px;
+        color:white;
+    }
+    p{
+        color:white;
+    }
+    width: 100%;
+}
+.cocau{
+    width: 100%;
+    height: 40px;
+}
+.ccocau{
+    text-align: center;
+    justify-content: center;
+    padding-top: 15px;
+}
+.content{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 30% 30%;
+    margin-top: 50px;
+    h4{
+        margin:5px;
+        color:white;
+    }
+}
+.grid-item{
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+    font-size: 20px;
+    text-align: center;
+}
+#avt{
+    width:200px;
+    border-radius: 100%;
+}
+.chucvu{
+    font-weight: bold;
+    padding-top: 10px;
+}
+.contentt{
+    display:grid;
+    margin-right: 50px;
+    justify-content:center;
+    grid-template-columns: 30% 30% 30%;
+    h4{
+        margin:5px;
+        color:white;
+    }
+}
+.grid-items{  
+    border-radius: 5px;
+    padding: 5px;
+    padding-bottom: 40px;
+    margin: 5px;
+    font-size: 20px;
+    text-align: center;
+}
+a {
+    text-decoration: none;
+    color:white;
+}
+a:hover{
+    text-decoration: underline;
+}
+
+.grid-item:hover{
+    transform: scale(1.1); 
+}
+.grid-items:hover{
+    transform: scale(1.1); 
+} 
+.tt{
+    padding:0px;
+    margin:0px;
+    width:315px;
+    height: 200px;
+    border-style: solid;
+    border-color: #0065ca;
+    border-width: 0px 0px 5px 0px;
+}
+/*group3*/
+.group3{
+    width: 100%;
+    background-color: #f6f7fd;
+    background-image: url(../imggtc/tintucbr.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    h3{
+        margin:0px;
+        padding-top: 40px;
+    }
+}
+.thanhtintuc{
+    width: 100%;
+    height: 110px;
+}
+.ttintuc{
+    text-align: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 30pt;
+    color: back;
+    padding-top: 25px;
+
+}
+.tintuc{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 21.5% 21.5% 21.5% 21.5%;
+}
+.grid-itemss{
+    margin: 24px;
+    font-size: 20px;
+    text-align:justify;
+    background-color:  #dcdcdc;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+}
+.tintuc :hover{
+    transform: scale(1.1);
+}
+.tt1{
+    padding:0px 10px;
+    color: black;
+}
+/*footer*/
+#ftmb{
+    display:none;
+}
+.footer{
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    color:white;
+    a:link {
+        text-decoration: none;
+        color:white;
+    }
+    a:hover {
+        text-decoration: none;
+        color: white;
+    }
+    a:visited {
+        color: white;
+    }
+    h2,p{
+        padding:5px;
+        padding-left: 138px;
+        position: relative;
+        color: white;
+    }
+    h2{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    #other{
+        background-color: #004f9e;
+        color: #dcdcdc;
+        margin:0px;
+        padding:8px;
+        padding-left:138px;
+        opacity:0.8;
+    }
+    .fa-brands{
+        margin-right: 10px;
+    }
+}
+.footer::before{
+    background-image: url(../img/footer.png);
+    /*background-attachment: fixed;*/
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity:0.9;
+    filter: brightness(40%);
+}
+}

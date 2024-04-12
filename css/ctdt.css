@@ -1,0 +1,581 @@
+/*Tiêu đề*/
+body{
+    margin:0px;
+    margin:auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13pt;
+.header{
+    font-family: 'Poppins', sans-serif;
+    justify-content: center;
+    height:100px;
+    background-color: #26316d;
+    .logo{
+        padding: 30px 20px 20px 138px;
+        float:left;
+    }
+    #mb{
+        display:none;
+    }
+    .container{
+        display:flex;
+        font-size: 13pt;
+        font-weight: 100;
+        justify-content:flex-end;
+        a:link {text-decoration: none;color: white;}
+        a:visited {color: white;}
+    }
+    .namemobile{
+        display:none;
+    }
+    .containermobile{
+        display:none;
+    }
+    .name{
+        font-size: 20pt;
+        color:white;
+        float:left;
+        margin:20px 0px;
+        padding:15px 0px 8px 0px;
+        justify-content: flex-start;
+    }
+    .item{
+        margin-top: 30px;
+        margin-right: 8px;
+        padding:8px 13px;
+        border-radius: 5px;
+        a:hover{
+            color:#dcdcdc;
+        }
+    }
+    .search-container{
+        background-color: white;
+        margin:33px 145px 30px 20px;
+        border-radius: 10px;
+        border-style: solid black;
+        border-width: 2px;
+        button{
+            margin: 0px !important;
+            border-radius: 0px 10px 10px 0px;
+            background-color: white;
+            border: none;
+            font-size: 13pt;
+            cursor: pointer;
+        }
+        input{
+            padding: 3px 8px;
+            border-radius: 10px 0px 0px 10px;
+            margin-right:0px;
+            font-size: 12pt;
+            border:none;
+            width:110px;
+        }
+    }
+}
+/*Menu*/
+.menu{
+    background: #dcdcdc;
+    box-sizing: border-box;
+    position:sticky;
+    z-index: 1;
+    top:0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 550;
+    font-size: 12pt;
+}
+#menu{
+    margin:0px;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+#menu li{
+    padding: 10px;
+    position: relative;
+    display: block;
+}
+#menu li a{
+    color: #000000;
+    text-decoration: none;
+    padding: 10px 10px;
+}
+#menu li a:hover{
+    background: #00568f;
+    color: white;
+}
+.submenu{
+    display: none;
+    font-weight: 100;
+}
+.subsmenu{
+    display: none;
+}
+#menu li:hover .submenu{
+    display: block;
+    position: absolute;
+    margin-top: 10px;
+    background: #0065ca;
+    padding: 0px;
+    a{
+        color:white;
+    }
+    li{
+        border-style: dotted;
+        border-width: 0px 0px 1px 0px;
+    }
+    li:hover{
+        background-color: #00568f;
+    }
+    width:300px;
+}
+.t:hover .t1{
+    color:white !important;
+    background-color: #00568f;
+}
+.submenu li:hover .subsmenu{
+    display: block;
+    position: absolute;
+    top:0px;
+    background: #0065ca;
+    padding: 0px;
+    a{
+        color:white;
+    }
+    li{
+        border-style: dotted;
+        border-width: 0px 0px 1px 0px;
+    }
+    li:hover{
+        background-color: #00568f;
+    }
+}
+.submenu .subsmenu{
+    box-shadow: 0px 20px 100px 0px rgba(0, 0, 0, 0.5);
+}
+#menu li:hover .gioithieu{
+    width:213px;
+}
+#menu li:hover .thongtin{
+    width:210px;
+}
+/*con của thông tin*/
+.thongtin li:hover .subsmenu{
+    left:210px;
+    width:260px;
+}
+#menu li:hover .daotao{
+    width:295px;
+}
+/*con của đào tạo*/
+.daotao li:hover .cunhan{
+    left:295px;
+    width:305px;
+}
+.daotao li:hover .caohoc{
+    left:295px;
+    width:360px;
+}
+#menu li:hover .nghiencuu{
+    width:205px;
+}
+#menu li:hover .tuyensinh{
+    width:330px;
+}
+#menu li:hover .vanban{
+    width:305px;
+}
+#menu li:hover .mangluoi{
+    width:165px;
+}
+.mangluoi li:hover .subsmenu{
+    left:165px;
+    width:195px;
+}
+
+
+/*Hểt header*/
+
+.outer-framework {
+    padding: 0 150px;
+}
+.title-bar {
+    display: flex;
+    align-items: center;
+    background-color: #26316D;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin-right: 20px; /* Thêm khoảng cách giữa tiêu đề và danh sách */
+    margin-left: 10px;
+}
+
+
+.training-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: grid; /* Sử dụng grid để quản lý layout của các mục */
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Tự động chia các mục vào hàng và cột */
+    gap: 10px; /* Khoảng cách giữa các mục */
+}
+
+.training-list li {
+    font-size: 16px;
+}
+
+.training-list li:hover {
+    text-decoration: underline; /* Gạch chân dưới chữ */
+    color: #000; /* Thay đổi màu sắc của chữ nếu muốn */
+    cursor: pointer; /* Biểu tượng chuột thay đổi để người dùng biết có thể tương tác */
+}
+
+.icon {
+    margin-right: 5px; /* Khoảng cách giữa icon và văn bản */
+}
+
+
+.training-section, .image-container {
+    margin-top: 20px; /* Hoặc khoảng cách bạn muốn */
+}
+
+.training-section {
+    display: flex; /* Thay đổi để phần tiêu đề và nội dung ngang hàng */
+    align-items: flex-start; /* Căn các items theo trục dọc từ trên xuống */
+}
+
+
+
+.image-container {
+    /* Thiết lập chiều rộng và chiều cao cố định hoặc tối đa cho khung chứa */
+    height: auto; /* Điều chỉnh chiều cao tự động dựa trên nội dung */
+    overflow: hidden; /* Ngăn chặn nội dung lòi ra ngoài */
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 225px;
+    background-color: #26316D;
+}
+
+
+
+.educational-image {
+    width: 80%; /* Ảnh chiếm 80% chiều rộng của div chứa */
+    height: 225px; /* Chiều cao tự động điều chỉnh để giữ tỷ lệ */
+    /* Bạn có thể thêm thuộc tính 'max-width' và 'max-height' để hạn chế kích thước tối đa của ảnh */
+}
+
+
+
+
+.main-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%; /* Đảm bảo chiếm toàn bộ chiều rộng khả dụng */
+    background-color: #fff; /* Nền trắng cho nội dung */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Tùy chọn: Thêm bóng để nổi bật */
+}
+
+
+.navigation-links {
+    font-size: 16px; /* Điều chỉnh cỡ chữ phù hợp */
+    color: #000; /* Màu chữ */
+    display: flex;
+    align-items: center;
+    margin-top: 40px; /* Khoảng cách từ phần trên */
+    margin-left: 10px;
+    a{
+        color:#000;
+        text-decoration: none;
+    }
+}
+
+.navigation-links i {
+    margin-right: 8px; /* Khoảng cách giữa icon và chữ */
+}
+
+.navigation-links .divider {
+    margin: 0 10px; /* Khoảng cách giữa các phần tử */
+}
+
+
+.training-program-container {
+    border: 1px solid #ccc; /* Đặt border cho div */
+    margin-top: 18px; /* Khoảng cách từ phần trên */
+    width: 100%; /* Sử dụng tỉ lệ phần trăm cho chiều rộng */
+    /*thêm*/
+    margin-bottom: 10px;
+}
+
+.training-program-header {
+    background-color: #f0f0f0; /* Màu xám nhạt cho header */
+    padding: 10px; /* Đệm cho header */
+    font-weight: bold; /* Đặt in đậm cho text */
+}
+
+/* Giữ nguyên CSS cho .training-program-container và .training-program-header */
+
+.training-program-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.training-program-list li {
+    display: flex;
+    align-items: center;
+    gap: 40px; /* Khoảng cách giữa hình ảnh và nội dung */
+    margin-bottom: 2px; /* Khoảng cách giữa các mục */
+}
+
+
+
+.content h3 {
+    display: flex;
+    flex-direction: column; /* Căn chỉnh nội dung theo chiều dọc */
+    font-weight: normal;
+    font-size: 17px;
+    
+}
+
+.content h3:hover {
+    font-weight: bold;
+}
+.content h3, .content em {
+    margin: 0; /* Loại bỏ lề mặc định */
+}
+
+
+.content em {
+    font-style: italic;
+    font-size: 0.9em; /* Chữ nhỏ hơn một chút */
+    color: #666; /* Màu chữ nhạt */
+    margin-top: 10px;
+    
+}
+
+.training-program-list img {
+    border-radius: 10px;
+    width: 150px; /* Giảm chiều rộng của hình ảnh */
+    height: auto; /* Giữ tỷ lệ chiều cao tự động */
+    margin-top: 25px;
+    margin-left: 10px;
+}
+
+.training-program-list .content h3 {
+    margin-bottom: 7px; /* Tăng khoảng cách giữa tiêu đề và ngày đăng */
+}
+
+/* Thêm hiệu ứng khi trỏ chuột cho toàn bộ mục li */
+.training-program-list li:hover h3 {
+    font-weight: bold; /* Chỉ in đậm tiêu đề khi trỏ chuột vào mục li */
+    cursor: pointer;
+}
+
+.content em::before {
+    content: "\f017"; /* Mã Unicode của biểu tượng đồng hồ trong Font Awesome */
+    font-family: "Font Awesome 5 Free"; /* Đặt font family cho biểu tượng */
+    font-weight: 900; /* Font Awesome yêu cầu font-weight 900 cho các biểu tượng đặc biệt */
+    margin-right: 5px; /* Tạo khoảng cách giữa biểu tượng và văn bản */
+    display: inline-block; /* Đảm bảo biểu tượng và văn bản ở cùng một dòng */
+}
+
+
+.left-section {
+    width: 65%;
+}
+
+.right-section {
+    width: 34%;
+    display: flex;
+    flex-direction: column;
+}
+
+.image-container, .news-container {
+    width: 100%; /* Đảm bảo chiếm toàn bộ chiều rộng của right-section */
+}
+
+.news-container {
+    border: 1px solid #ccc; /* Đặt border cho div */
+    margin-top: 13.5px; /* Khoảng cách từ phần trên */
+    width: 100%; /* Sử dụng tỉ lệ phần trăm cho chiều rộng */
+}
+
+.news-header {
+    background-color: #f0f0f0; /* Màu xám nhạt cho header */
+    padding: 10px; /* Đệm cho header */
+    font-weight: bold; /* Đặt in đậm cho text */
+}
+
+.news-list li {
+    display: flex; /* Sử dụng flexbox để căn chỉnh */
+    align-items: center; /* Căn giữa các items theo chiều dọc */
+    margin-bottom: 30px; /* Khoảng cách giữa các items */
+    border-bottom: 1px solid #eee; /* Thêm đường kẻ xám mờ */
+    padding-bottom: 15px; /* Thêm đệm dưới cùng */
+}
+
+.news-list li:not(:last-child) {
+    border-bottom: 1px solid #eee; /* Áp dụng đường kẻ cho tất cả ngoại trừ li cuối cùng */
+}
+
+.news-list li:hover h3 {
+    font-weight: bold; /* Chỉ in đậm tiêu đề khi trỏ chuột vào mục li */
+    cursor: pointer;
+}
+
+
+.news-content h3 {
+    margin: 0; /* Loại bỏ margin mặc định của h3 */
+    font-size: 16px; /* Kích thước chữ cho tiêu đề thông báo */
+    margin-bottom: 5px;
+}
+
+.news-content em {
+    font-size: 14px; /* Kích thước chữ cho ngày đăng */
+    color: #666; /* Màu sắc cho ngày đăng */
+}
+
+.news-content h3, .news-content em {
+    font-weight: normal; /* Đặt trọng lượng font về bình thường */
+}
+
+
+.bullet-point {
+    color: gray; /* Màu sắc cho icon */
+    font-size: 8px; /* Kích thước của icon */
+    margin-right: 10px; /* Khoảng cách giữa icon và text */
+}
+
+.news-content em::before {
+    content: "\f017"; /* Mã Unicode của icon đồng hồ trong Font Awesome */
+    font-family: 'Font Awesome 5 Free'; /* Đặt font family để hiển thị icon */
+    padding-right: 5px; /* Thêm khoảng cách giữa icon và text */
+    font-weight: 900; /* Font Awesome yêu cầu độ đậm này để icon hiển thị đúng */
+    color: #666; /* Màu sắc cho icon, bạn có thể điều chỉnh */
+}
+
+.general-news-container {
+    border: 1px solid #ccc; /* Đặt border cho div */
+    margin-top: 10px; /* Khoảng cách từ phần trên */
+    width: 100%; /* Sử dụng tỉ lệ phần trăm cho chiều rộng */
+    /*thêm*/
+    position:relative;
+}
+
+.general-news-header {
+    background-color: #f0f0f0; /* Màu xám nhạt cho header */
+    padding: 10px; /* Đệm cho header */
+    font-weight: bold; /* Đặt in đậm cho text */
+}
+
+.general-news-list li {
+    display: flex; /* Sử dụng flexbox để căn chỉnh */
+    align-items: center; /* Căn giữa các items theo chiều dọc */
+    margin-bottom: 30px; /* Khoảng cách giữa các items */
+    border-bottom: 1px solid #eee; /* Thêm đường kẻ xám mờ */
+    padding-bottom: 13.5px; /* Thêm đệm dưới cùng */
+}
+
+.general-news-list li:not(:last-child) {
+    border-bottom: 1px solid #eee; /* Áp dụng đường kẻ cho tất cả ngoại trừ li cuối cùng */
+}
+
+.general-news-container li:hover h3 {
+    font-weight: bold; /* Chỉ in đậm tiêu đề khi trỏ chuột vào mục li */
+    cursor: pointer;
+}
+
+
+
+.general-news-list img {
+    width: 100px; /* Tăng kích thước ảnh */
+    margin-right: 20px; /* Tăng khoảng cách giữa ảnh và nội dung tin */
+}
+
+.general-news-container {
+    margin-top: 17px;
+    padding-left: 0px; /* Đảm bảo ảnh sát mép trái */
+}
+
+
+.general-news-list .content h3 {
+    margin-bottom: 3px;
+    font-size: 16px; 
+}
+
+.general-news-container img {
+    border-radius: 10px; /* Bo góc hình ảnh */
+}
+
+
+
+.footer{
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    color:white;
+    a:link {
+        text-decoration: none;
+        color:white;
+    }
+    a:hover {
+        text-decoration: none;
+        color: white;
+    }
+    a:visited {
+        color: white;
+    }
+    h2,p{
+        padding:5px;
+        padding-left: 138px;
+        position: relative;
+        color: white;
+    }
+    h2{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    #other{
+        background-color: #004f9e;
+        color: #dcdcdc;
+        margin:0px;
+        padding:8px;
+        padding-left:138px;
+        opacity:0.8;
+    }
+    .fa-brands{
+        margin-right: 10px;
+    }
+}
+.footer::before{
+    background-image: url(../imgctdt/footer.png);
+    /*background-attachment: fixed;*/
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity:0.9;
+    filter: brightness(40%);
+}
+
+@media (max-width: 1024px) {
+    .left-section, .right-section {
+        /* Bạn có thể giữ nguyên tỷ lệ này hoặc thay đổi nếu muốn */
+        flex: 1;
+    }
+}
+
+/* Điểm ngắt thứ hai: Khi màn hình nhỏ */
+@media (max-width: 1100px) {
+    .right-section {
+        display: none; /* Ẩn phần bên phải khi màn hình nhỏ */
+    }
+    
+    .left-section {
+        flex: 0 0 100%; /* Phần bên trái mở rộng chiếm 100% */
+    }
+}
+}

@@ -1,0 +1,187 @@
+body{
+    .header{
+        width:100%;
+        height:45px;
+        .logo{
+            width:8%;
+            padding-left: 2px;
+            padding-top: 7px;
+            padding-right:5px;
+            float:left;
+            img{
+                width:30px;
+            }
+            padding-bottom: 0px;
+            border-style: solid;
+            border-width: 0px 0px 1px 0px;
+            border-color: black;
+        }
+        .name{
+            display:none;
+        }
+        .namemobile{
+            width:90%;
+            display:block;
+            float:left;
+            h4{
+                margin-top:13px;
+                color:white;
+                margin-bottom: 0px;
+            }
+            padding-bottom: 8px;
+            border-style: solid;
+            border-width: 0px 0px 1px 0px;
+            border-color: black;
+        }
+        .container{
+            display:none;
+        }
+        /*tạo menu mới*/
+    #mb{
+        display:block;
+        background-color: #26316d;
+        width:100%;
+        h6{
+            margin-top: 4px;
+            font-size: 12pt;
+        }
+        #menumb{
+            padding:10px;
+            margin:0px;
+            list-style: none;
+            display: flex;
+            height:25px;
+            justify-content: space-evenly;
+            i{
+                color:white;
+                padding-top: 6px;
+            }
+        }
+        #menumb li{
+            position: relative;
+            display: block;
+            a:link {text-decoration: none;color: white;}
+            a:visited {color: white;}
+        }
+        .submenumb{
+            display:none;
+        }
+        .subsubmb{
+            display:none;
+        }
+        #menumb li:hover .submenumb{
+            z-index: 2;
+            background-color: white;
+            justify-content: flex-end;
+            display: flex;
+            flex-direction:column;
+            position: absolute;
+            margin-top: 10px;
+            padding: 0px;
+            width:230px;
+            margin-left: -204px;
+            .cha{
+                border-style: dotted;
+                border-width: 0px 1px 1px 1px;
+                padding:10px;
+                font-size: 12pt;
+            }
+            .chah{
+                border-style: dotted;
+                border-width: 0px 1px 1px 1px;
+                padding:15px 13px;
+                #tk{
+                    background-color: white;
+                    border-width: 1px;
+                    border-style: solid;
+                    border-radius: 20px;
+                    input{
+                        background-color: white;
+                        font-size: 12pt;
+                        border:none;
+                        margin:5px 0px 6px 7px;
+                        width:150px;
+                    }
+                    button{
+                        border:none;
+                        background-color: white;
+                        font-size: 13pt;
+                        padding:0px;
+                        margin:0px;
+                        margin-top: 2px;
+                    }
+                }
+            }
+            a{
+                text-decoration: none;
+                color:#828181;
+            }
+            li{
+                /*background-color: #828181;*/
+                a{
+                    color:black;
+                }
+                i{
+                    color:black !important;
+                }
+                .subsubmb{
+                    /*display:flex;*/
+                    flex-direction:column;
+                    padding:0px;
+                    border-width: 1px 0px 0px 0px;
+                    li{
+                        padding:10px;
+                        padding-right: 0px;
+                    }
+                }
+            }
+        }
+    }
+/*Hết menu con mới */
+    }
+    .menu{
+        display:none;
+    }
+    .footer{
+        width: 100%;
+        background-position: bottom;
+        margin-top: auto;
+        h2{
+            text-align: center;
+            margin: auto;
+            padding: 20px 0px;
+            font-size: 23px;
+            width: 80%;
+        }
+        p{
+            margin-left: 0px;
+            padding: 5px 0px 0px 10px;
+            font-size: 15px;
+            width: auto;
+            margin: 5px 0px;
+            i{
+                width:auto;
+                padding-right: 5px;
+            }
+        }
+        #other{
+            width: 92%;
+            margin-left: 0px;
+            text-align: left;
+            padding: 7px 15px;
+            line-height: 20px ;
+        }
+    }
+    .footer::before{
+        background-position: bottom
+    }
+
+    .outer-framework {
+        padding: 40px 0px;
+    }
+    
+    
+    
+    
+    
+}

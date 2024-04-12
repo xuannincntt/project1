@@ -1,0 +1,334 @@
+body{
+    .header{
+        width:100%;
+        height:45px;
+        .logo{
+            width:8%;
+            padding-left: 2px;
+            padding-top: 7px;
+            padding-right:5px;
+            float:left;
+            img{
+                width:30px;
+            }
+            padding-bottom: 0px;
+            border-style: solid;
+            border-width: 0px 0px 1px 0px;
+            border-color: black;
+        }
+        .name{
+            display:none;
+        }
+        .namemobile{
+            padding-bottom: 8px;
+            border-style: solid;
+            border-width: 0px 0px 1px 0px;
+            border-color: black;
+            width:90%;
+            display:block;
+            float:left;
+            h4{
+                margin-top:13px;
+                color:white;
+                margin-bottom: 0px;
+            }
+        }
+        .container{
+            display:none;
+        }
+        /*tạo menu mới*/
+    #mb{
+        display:block;
+        background-color: #26316d;
+        width:100%;
+        h6{
+            margin-top: 4px;
+            font-size: 12pt;
+        }
+        #menumb{
+            padding:10px;
+            margin:0px;
+            list-style: none;
+            display: flex;
+            height:25px;
+            justify-content: space-evenly;
+            i{
+                color:white;
+                padding-top: 6px;
+            }
+        }
+        #menumb li{
+            position: relative;
+            display: block;
+            a:link {text-decoration: none;color: white;}
+            a:visited {color: white;}
+        }
+        .submenumb{
+            display:none;
+        }
+        .subsubmb{
+            display:none;
+        }
+        #menumb li:hover .submenumb{
+            z-index: 2;
+            background-color: white;
+            justify-content: flex-end;
+            display: flex;
+            flex-direction:column;
+            position: absolute;
+            margin-top: 10px;
+            padding: 0px;
+            width:230px;
+            margin-left: -204px;
+            .cha{
+                border-style: dotted;
+                border-width: 0px 1px 1px 1px;
+                padding:10px;
+                font-size: 12pt;
+            }
+            .chah{
+                border-style: dotted;
+                border-width: 0px 1px 1px 1px;
+                padding:15px 13px;
+                #tk{
+                    background-color: white;
+                    border-width: 1px;
+                    border-style: solid;
+                    border-radius: 20px;
+                    input{
+                        background-color: white;
+                        font-size: 12pt;
+                        border:none;
+                        margin:5px 0px 6px 7px;
+                        width:150px;
+                    }
+                    button{
+                        border:none;
+                        background-color: white;
+                        font-size: 13pt;
+                        padding:0px;
+                        margin:0px;
+                        margin-top: 2px;
+                    }
+                }
+            }
+            a{
+                text-decoration: none;
+                color:#828181;
+            }
+            li{
+                /*background-color: #828181;*/
+                a{
+                    color:black;
+                }
+                i{
+                    color:black !important;
+                }
+                .subsubmb{
+                    /*display:flex;*/
+                    flex-direction:column;
+                    padding:0px;
+                    border-width: 1px 0px 0px 0px;
+                    li{
+                        padding:10px;
+                        padding-right: 0px;
+                    }
+                }
+            }
+        }
+    }
+/*Hết menu con mới */
+    }
+    .menu{
+        display:none;
+    }
+    .gioithieus{
+        display:none;
+    }
+    .group2{
+        display: none;
+    }
+    .group3{
+        display: none;
+    }
+
+/*footer đã xong*/
+    .footer{
+        width: 100%;
+        background-position: bottom;
+        margin-top: auto;
+        h2{
+            text-align: center;
+            margin: auto;
+            padding: 20px 0px;
+            font-size: 23px;
+            width: 80%;
+        }
+        p{
+            margin-left: 0px;
+            padding: 5px 0px 0px 10px;
+            font-size: 15px;
+            width: auto;
+            margin: 5px 0px;
+            i{
+                width:auto;
+                padding-right: 5px;
+            }
+        }
+        #other{
+            width: 92%;
+            margin-left: 0px;
+            text-align: left;
+            padding: 7px 15px;
+            line-height: 20px ;
+        }
+    }
+    .footer::before{
+        background-position: bottom
+    }
+/*Hết footer*/
+
+/*mobile*/
+   .mobile{
+    display: block;
+   }
+   .phan1mb{
+        background-image:url(../imggtc/bgrtech.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        .dott {
+            cursor:pointer;
+            height: 13px;
+            width: 13px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+        .active, .dott:hover {
+        background-color: #717171;
+        }
+   }
+   .gr1{
+    width: 100%;
+    margin: auto;
+    margin-top: 40px;
+   }
+   .gtchungg{
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: aliceblue;
+    padding-top: 10px;
+    text-shadow: 0 0 10px rgba(255,255,255,0.5); 
+   }
+   .anhsitdee{
+      margin: auto;
+      text-align: center;
+   }
+   .gtcchitiett{
+    width: 85%;
+    text-align: justify;
+    font-size: 15px;
+    color: aliceblue;
+    font-weight: lighter;
+    text-shadow: 0 0 10px rgba(255,255,255,0.5); 
+    margin: auto;
+   }
+   .phan2mb{
+    width: 100%;
+    height:fit-content
+   }
+.gr2{
+    width: 100%;
+    background-image:url(img/bgrtech.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+   }
+.cocauu{
+    padding-top: 10px;
+    text-align: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: aliceblue;
+    text-shadow: 0 0 10px rgba(255,255,255,0.5); 
+   }
+.avttt{
+    text-align: center;
+   }
+ #avtt{
+    border-radius: 100% ;
+    width: 150px;
+    height: 150px;
+    padding-top: 30px;
+   }
+.giangvienn{
+    padding-top: 20px;
+    text-align: center;
+}
+.gvv{
+    color: aliceblue;
+    text-shadow: 0 0 10px rgba(255,255,255,0.5); 
+}
+.tenn{
+    text-shadow: 0 0 10px rgba(255,255,255,0.5);}
+.chucvuu{
+        font-weight: bold;
+        font-size: 15px;
+        color: aliceblue;
+        text-shadow: 0 0 10px rgba(255,255,255,0.5); 
+    } 
+.phan3mb{
+    width: 100%;
+    height: fit-content;
+    padding-top: 10px;
+    text-align: center;
+    justify-content: center;
+
+}
+.gr3{
+ width: 100%;
+ height: 350px;
+ text-align: center;
+ text-align: center;
+justify-content: center;
+} 
+.tintucc{
+    padding-top: 10px;
+    text-align: center;
+    color: #26316d ;
+    font-size: 20px;
+    font-weight: bold;
+    text-shadow: 0 0 10px rgba(255,255,255,0.5); 
+    text-align: center;
+    justify-content: center;
+} 
+.anhtintuc{
+    padding-top: 20px;
+    width: 95%;
+    height: auto;
+    margin: auto;
+    text-align: center;
+    img{
+        width:95%;
+        border-style: solid;
+        border-width: 0px 0px 5px 0px;
+        border-color: #4958ac;
+    }
+}
+.tt2{
+    padding-top: 10px;
+    font-size: 13px;
+    color: #26316d ;
+    text-align:justify;
+    width: 90%;
+    margin: auto;
+    font-weight: bold;
+}
+img :hover{
+    transform: scale(1.1);
+}
+}
